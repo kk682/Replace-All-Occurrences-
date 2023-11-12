@@ -1,1 +1,1 @@
-John is a smart student. brian does not study for his exams.
+John is a smart student. john does not study for his exams.
