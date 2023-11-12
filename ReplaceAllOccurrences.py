@@ -1,15 +1,17 @@
-originalText="John is a smart student. John does not study for his exams."
-listOfWords=originalText.split()
-print(listOfWords)
+import os
+import sys
+import fileinput
+import re
 
-info={}
-info["name"]="John"
-info["characteristics"]="smart"
-info["exam"]="does not study"
+originalText = input("originalName")
+replaceText = input("newName")
+with open ("TextFile.txt", "r") as data:
+    filedata = data.read()
 
-newText=[]
-for word in words:
-    newText.replace(replacements.get(name="Brian"))
-return"".join(newText)
-print(newText)
+# originalText="John is a smart student. john does not study for his exams."
+newText = filedata.replace(originalText, replaceText)
+
+newText = filedata.replace(originalText.lower(), replaceText)
+with open ("TextFile.txt", "w") as data:
+    filedata = data.write(newText)
 
